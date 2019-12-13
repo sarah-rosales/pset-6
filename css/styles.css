@@ -3,15 +3,24 @@
     padding: 1;
 }
 h1 {
-  color: white;
+  color: #cf0b0b;
   text-align: center;
   font-family: cursive;
+}
+h2 {
+  color: yellow;
+  text-align: center;
+  font-family: cursive;
+}
+body {
+    background-color: #557d34;
+    text-align: left;
 }
 .header {
     padding: 60px;
     text-align: center;
-    background: #2e92db;
-    color: white;
+    background: #2edbc7;
+    color: #557d34;
     font-size: 30px;
     font-family: cursive;
 }
