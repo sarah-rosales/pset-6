@@ -5,7 +5,7 @@
 .header {
     padding: 30px;
     text-align: center;
-    background: white;
+    background: #add8e6;
     color: #557d34;
     font-size: 30px;
     font-family: cursive;
@@ -16,11 +16,13 @@ h1 {
     font-family: fantasy;
 }
 body {
-    background-color: white;
+    background-color: #add8e6;
     text-align: center;
 }
-
 hr {
     border-width: thick;
     margin: 0 auto;
+}
+button:hover {
+  box-shadow: 0.3em 0.3em 0.3em #777777;
 }
