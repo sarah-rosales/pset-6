@@ -3,9 +3,12 @@ window.onload = function() {
   document.getElementById("REMOVE").onclick = removeTask;
 }
 
+let todoItems = [];
+
 const addTask = function() {
 
 }
+
 const removeTask = function() {
-  
+
 }
