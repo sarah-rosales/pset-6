@@ -2,6 +2,56 @@
     margin: 0;
     padding: 1;
 }
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+ul li:hover {
+  background: #ddd;
+}
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
 .header {
     padding: 30px;
     text-align: center;
@@ -9,6 +59,39 @@
     color: #557d34;
     font-size: 30px;
     font-family: "Comic Sans", "Comic Sans MS", cursive;
+}
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75em;
+  padding: 10px;
+  float: center;
+  font-size: 16px;
+}
+.addButton {
+  padding: 10px;
+  width: 15em;
+  background: #787ebf;
+  color: white;
+  float: center;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+.addButton:hover {
+  background-color: #bbb;
+}
+hr {
+    border-width: thick;
+    margin: 0 auto;
 }
 h1 {
     color: #010824;
@@ -19,23 +102,7 @@ body {
     background-color: #add8e6;
     text-align: center;
 }
-hr {
-    border-width: thick;
-    margin: 0 auto;
-}
-button:hover {
-  box-shadow: 0.3em 0.3em 0.3em #777777;
-}
-button {
-  display: inline-block;
-  margin: auto;
-  margin-left: 1%;
-  margin-right: 1%;
-  height: 40px;
-  width: 125px;
-  font: 25px "Comic Sans", "Comic Sans MS", cursive;
-}
-#myInput {
-  height: 25px;
-  width: 500px;
+.ul {
+  margin: 0;
+  padding: 0;
 }
