@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 1;
+    padding: 0;
 }
 ul {
   margin: 0;
@@ -13,34 +13,14 @@ ul li {
   background: #eee;
   font-size: 18px;
   transition: 0.2s;
-
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-ul li:nth-child(odd) {
-  background: #f9f9f9;
 }
 ul li:hover {
   background: #ddd;
 }
-ul li.checked {
-  background: #888;
-  color: #fff;
+ul li:checked {
+  background: #888888;
+  color: #ffffff;
   text-decoration: line-through;
-}
-ul li.checked::before {
-  content: '';
-  position: absolute;
-  border-color: #fff;
-  border-style: solid;
-  border-width: 0 2px 2px 0;
-  top: 10px;
-  left: 16px;
-  transform: rotate(45deg);
-  height: 15px;
-  width: 7px;
 }
 .close {
   position: absolute;
@@ -101,8 +81,4 @@ h1 {
 body {
     background-color: #add8e6;
     text-align: center;
-}
-.ul {
-  margin: 0;
-  padding: 0;
 }
